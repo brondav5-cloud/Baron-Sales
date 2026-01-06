@@ -6,7 +6,18 @@ import json
 import io
 from pathlib import Path
 
-st.set_page_config(page_title="דשבורד מכירות BARON", page_icon="📊", layout="wide")
+st.set_page_config(page_title="BARON", page_icon="📊", layout="wide")
+
+# PWA Icon meta tags
+st.markdown('''
+<head>
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/brondav5-cloud/Baron-Sales/main/baron_icon.png">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/brondav5-cloud/Baron-Sales/main/baron_icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BARON">
+</head>
+''', unsafe_allow_html=True)
 
 # ========================================
 # נתוני סוכנים
